@@ -1,0 +1,25 @@
+﻿<Window x:Class="Passwords_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Passwords_wpf"
+        mc:Ignorable="d"
+        Title="Passwords" Height="400" Width="400">
+    <Grid x:Name="Pswrds">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="57*"/>
+            <ColumnDefinition Width="57*"/>
+            <ColumnDefinition Width="57*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan ="4" x:Name="textLabel" Margin="0,0,0,48" Grid.RowSpan="1" FontSize="25"/>
+        <Button Grid.Row="1" FontSize="12" Grid.ColumnSpan="3" Margin="133,96,133,0" Grid.RowSpan="2">Показать пароль</Button>
+        <Button Grid.Row="2" FontSize="12" Grid.ColumnSpan="3" Margin="133,96,133,0" Grid.RowSpan="2" Click="Button_Click_1">Закрыть программу</Button>
+    </Grid>
+</Window>
